@@ -82,10 +82,10 @@
                         <?php echo DwForm::select('beneficiario.nacionalidad', array(''=>'Seleccione:','V'=>'Venezolana', 'E'=>'Extranjera'), array('class'=>'input-xlarge input-required show-error data-toggle="tooltip" title="Seleccione la Nacionalidad del Beneficiario"'), NULL ,'Nacionalidad','Seleccione una de las Opciones'); ?>
                     </div>
                     <div class="span3">
-                        <?php echo DwForm::text('beneficiario.cedula', array('class'=>'input-xlarge mask-pint input-numeric input-required show-error data-toggle="tooltip" title="Introduzca la Cedula del Beneficiario, en caso de poseeer; sino Introduzca la del Titular"'), NULL ,'Cédula de Identidad','Solo se aceptan Nùmeros ejemplo: "12345678"'); ?>
+                        <?php echo DwForm::text('beneficiario.cedula', array('class'=>'input-xlarge mask-pint input-numeric input-required show-error data-toggle="tooltip" title="Introduzca la Cedula del Beneficiario, en caso de poseeer; sino Introduzca la del Titular"'), NULL ,'Cédula de Identidad','Solo Nùmeros: "12345678"'); ?>
                     </div>
                     <div class="span3">
-                        <?php echo DwForm::select('beneficiario.estado_civil', array(''=>'Seleccione:', 'S'=>'Soltero', 'c'=>'Concubinato','C'=>'Casado', 'D'=>'Divorciado', 'V'=>'Viudo'), array('class'=>'input-xlarge input-required show-error data-toggle="tooltip" title="Seleccione el Estado Civil del Beneficiario"'), NULL ,'Estado Civil','Seleccione una de las Opciones'); ?>
+                        <?php echo DwForm::select('beneficiario.estado_civil', array(''=>'Seleccione:', 'S'=>'Soltero', 'c'=>'Concubinato','C'=>'Casado', 'D'=>'Divorciado', 'V'=>'Viudo'), array('class'=>'input-xlarge input-required show-error data-toggle="tooltip" title="Seleccione el Estado Civil del Beneficiario"'), NULL ,'Estado Civil'); ?>
                     </div>
                     <div class="span3">
                         <?php echo DwForm::date('beneficiario.fecha_nacimiento', array('class'=>'input-large input-required mask-date input-date show-errors data-toggle="tooltip" title="Seleccione la Fecha de Nacimiento del Beneficiafrio"'),date("Y-m-d"), 'Fecha de Nacimiento'); ?>
@@ -110,13 +110,13 @@
                         <?php echo DwForm::tel('beneficiario.participacion', array('class'=>'input-xlarge input-numeric input-required mask-pint show-error'), NULL, 'Participación'); ?>
                     </div>
                     <div class="span3">
-                        <?php echo DwForm::select('titular.grupo_sanguineo', array(''=>'Seleccione:', 'O-'=>'O-', 'O+'=>'O+','A-'=>'A-', 'A+'=>'A+', 'AB+'=>'AB+', 'AB-'=>'AB-'), array('class'=>'input-xlarge show-error data-toggle="tooltip" title="Escriba el Seleccione el Grupo Sanguineo del Beneficiario"'), NULL, 'Grupo Sanguineo'); ?>
+                        <?php echo DwForm::select('titular.grupo_sanguineo', array(''=>'Seleccione:', 'O-'=>'O-', 'O+'=>'O+','A-'=>'A-', 'A+'=>'A+', 'AB+'=>'AB+', 'AB-'=>'AB-'), array('class'=>'input-xlarge show-error data-toggle="tooltip" title="Seleccione el Grupo Sanguineo del Beneficiario"'), NULL, 'Grupo Sanguineo'); ?>
                     </div>
                     <div class="span3">
-                        <?php echo DwForm::tel('beneficiario.celular', array('class'=>'input-xlarge input-numeric mask-pint show-error data-toggle="tooltip" title="Escriba el Tlf. Celular del Titular"'), NULL, 'Celular','Solo se Aceptan Nùmeros, Ej: 04145555555'); ?>
+                        <?php echo DwForm::tel('beneficiario.celular', array('class'=>'input-xlarge input-numeric mask-pint show-error data-toggle="tooltip" title="Escriba el Tlf. Celular del Titular"'), NULL, 'Celular','Solo Nùmeros: 04145555555'); ?>
                     </div>
                     <div class="span3">
-                        <?php echo DwForm::tel('beneficiario.telefono', array('class'=>'input-xlarge input-numeric mask-pint show-error data-toggle="tooltip" title="Escriba el Tlf. Fijo / Local del Titular"'), NULL, 'Telèfono','Solo se Aceptan Nùmeros, Ej: 02550000000'); ?>'), NULL, 'Teléfono'); ?>
+                        <?php echo DwForm::tel('beneficiario.telefono', array('class'=>'input-xlarge input-numeric mask-pint show-error data-toggle="tooltip" title="Escriba el Tlf. Fijo / Local del Titular"'), NULL, 'Telèfono','Solo Números: 02550000000'); ?>'), NULL, 'Teléfono'); ?>
                     </div>
                 </div>
                 <div class="row-fluid">
